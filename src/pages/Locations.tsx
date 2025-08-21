@@ -73,7 +73,7 @@ const Locations = () => {
     {
       id: "3",
       name: "Manipal Hospital Sarjapur Road",
-      address: "46/2, Main Outer Ring Rd, Ambalipura, Sarjapura",
+      address: "46/2, Main Outer Ring Rd, Ambalipur, Sarjapura",
       city: "Bangalore", 
       distance: "12.5 km",
       phone: "+91 80 6692 2000",
