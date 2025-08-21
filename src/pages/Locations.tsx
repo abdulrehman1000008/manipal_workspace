@@ -79,7 +79,7 @@ const Locations = () => {
       phone: "+91 80 6692 2000",
       hours: "6:00 AM - 10:00 PM",
       rating: 4.6,
-      services: ["Outpatient Care", "Vaccinations Center", "Child Health Checkups"],
+      services: ["Outpatient Care", "Vaccination Center", "Child Health Checkups"],
       specialties: ["General Pediatrics", "Pediatric Dermatology"],
       emergency: false,
       pediatricICU: false,
