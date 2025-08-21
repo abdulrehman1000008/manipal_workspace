@@ -28,8 +28,8 @@ const Appointments = () => {
   const doctors = [
     {
       id: "1",
-      name: "Dr. Priya Sharma",
-      speciality: "Pediatric Cardiology",
+      name: "Dr. Bhuvaneshwar ",
+      speciality: " General Pediatrics",
       experience: "15 years",
       rating: 4.9,
       image: "👩‍⚕️",
@@ -37,9 +37,9 @@ const Appointments = () => {
     },
     {
       id: "2", 
-      name: "Dr. Rajesh Kumar",
-      speciality: "General Pediatrics",
-      experience: "12 years",
+      name: "Dr. Anil Kumar Y C",
+      speciality: " General Pediatrics",
+      experience: "15 years",
       rating: 4.8,
       image: "👨‍⚕️",
       nextAvailable: "Today 4:00 PM"

@@ -38,21 +38,21 @@ const Locations = () => {
   const [selectedHospital, setSelectedHospital] = useState<string | null>(null);
 
   const hospitals: Hospital[] = [
-    {
+        {
       id: "1",
-      name: "Manipal Hospital Whitefield",
-      address: "#143, 212-2015, EPIP Zone, ITPL Rd, Whitefield",
-      city: "Bangalore",
-      distance: "2.5 km",
-      phone: "+91 80 6692 2222",
+      name: "Manipal Hospital Mysore", 
+      address: "85-86, Bangalore-Mysore Ring Road Junction, Bannimantap 'A' Layout",
+      city: "Mysore",
+      distance: "145 km",
+      phone: "+91 821 242 7777",
       hours: "24/7 Emergency",
-      rating: 4.8,
-      services: ["Emergency Care", "Pediatric ICU", "Neonatal Care", "Vaccination Center"],
-      specialties: ["Pediatric Cardiology", "Child Neurology", "Pediatric Surgery"],
+      rating: 4.7,
+      services: ["Emergency Care", "Pediatric ICU", "Neonatal Care", "Vaccination Center", "Child Surgery"],
+      specialties: ["General Pediatrics", "Pediatric Cardiology", "Child Neurology", "Pediatric Orthopedics"],
       emergency: true,
       pediatricICU: true,
-      latitude: 12.9698,
-      longitude: 77.7500
+      latitude: 12.349979193771286,
+      longitude: 76.6601800569177
     },
     {
       id: "2", 
@@ -104,19 +104,19 @@ const Locations = () => {
     },
     {
       id: "5",
-      name: "Manipal Hospital Mysore", 
-      address: "85-86, Bangalore-Mysore Ring Road Junction, Bannimantap 'A' Layout",
-      city: "Mysore",
-      distance: "145 km",
-      phone: "+91 821 242 7777",
+      name: "Manipal Hospital Whitefield",
+      address: "#143, 212-2015, EPIP Zone, ITPL Rd, Whitefield",
+      city: "Bangalore",
+      distance: "2.5 km",
+      phone: "+91 80 6692 2222",
       hours: "24/7 Emergency",
-      rating: 4.7,
-      services: ["Emergency Care", "Pediatric ICU", "Neonatal Care", "Vaccination Center", "Child Surgery"],
-      specialties: ["General Pediatrics", "Pediatric Cardiology", "Child Neurology", "Pediatric Orthopedics"],
+      rating: 4.8,
+      services: ["Emergency Care", "Pediatric ICU", "Neonatal Care", "Vaccination Center"],
+      specialties: ["Pediatric Cardiology", "Child Neurology", "Pediatric Surgery"],
       emergency: true,
       pediatricICU: true,
-      latitude: 12.349979193771286,
-      longitude: 76.6601800569177
+      latitude: 12.9698,
+      longitude: 77.7500
     }
     
   ];
