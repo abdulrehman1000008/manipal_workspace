@@ -1,381 +1,325 @@
-# 🎨 **PediCare – A Premier Pediatric Digital Experience**  
-> *An elegant, responsive web application that blends modern tech with timeless design.*
+---
+<p align="center">
+  <h1><b>Manipal HealthHub</b></h1>
+  <p><i>Empowering healthcare through seamless digital experience.</i></p>
+
+  <a href="https://github.com/manipalhealthhub"><img src="https://img.shields.io/github/repo-size/manipalhealthhub?label=repo%20size" alt="Repo Size"></a>
+  <a href="https://github.com/manipalhealthhub"><img src="https://img.shields.io/github/last-commit/manipalhealthhub" alt="Last Commit"></a>
+  <a href="https://github.com/manipalhealthhub"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://github.com/manipalhealthhub"><img src="https://img.shields.io/github/stars/manipalhealthhub?style=social" alt="GitHub stars"></a>
+  <br><br>
+  <a href="https://app.manipalhealthhub.com"><img src="https://img.shields.io/badge/Live Demo-Visit%20Site-000000" alt="Live Demo"></a>
+  <a href="https://slides.dev/manipalhealthhub"><img src="https://img.shields.io/website?url=https%3A%2F%2Fslides.dev%2Fmanipalhealthhub" alt="Presentation"></a>
+</p>
+---
+
+## 📚 Table of Contents
+| Section | Link |
+|---------|------|
+| [Overview](#-overview) | # |
+| [Visual Showcase](#-visual-showcase) | # |
+| [Features](#-features) | # |
+| [Technology Stack](#-technology-stack) | # |
+| [Quick Start](#-quick-start) | # |
+| [Detailed Usage](#-detailed-usage) | # |
+| [Project Structure](#-project-structure) | # |
+| [Contributing](#-contributing) | # |
+| [Roadmap & Changelog](#-roadmap--changelog) | # |
+| [Support & Community](#-support--community) | # |
+| [Credits & Acknowledgments](#-credits--acknowledgments) | # |
+| [License](#-license) | # |
 
 ---
 
-## 📌 **Project Overview**
+## 📝 Overview
+<p>
+Manipal HealthHub is a cutting‑edge, single‑page application designed for modern healthcare facilities. Utilizing a blend of powerful TypeScript, React, and Tailwind CSS, it delivers an intuitive interface for patient appointments, emergency care, and health monitoring—all in one place.
 
-**PediCare** is a full‑stack, single‑page application built with **React** + **TypeScript**, featuring a sleek UI component library, intuitive navigation, and powerful health‑care utilities. Its core mission is to streamline pediatric care by providing parents, caregivers, and medical professionals with instant access to appointments, symptom checking, nutrition guidance, and emergency resources—all from one place.
+The platform solves the frustration of fragmented patient data. By consolidating appointments, chat support, pediatric nutrition advice, and vaccinations under a unified user experience, health professionals can focus on care rather than paperwork.
 
-- **Why PediCare?**  
-  Parents today need reliable, bite‑sized medical information. PediCare delivers this through a clean interface, data‑driven insights, and a community‑focused design that respects privacy and accessibility.
-
-- **How it solves real problems**  
-  • Reduces scheduling friction with an integrated calendar  
-  • Offers instant symptom triage via in‑app chat  
-  • Provides curated nutrition and vaccination guides  
-  • Keeps emergency contacts and locations always visible, safeguarding wellbeing.
+With a responsive design, the UI adapts to desktops, tablets, and smartphones, giving hospital staff and patients a seamless interaction from any device. The underlying architecture ensures high scalability, ready to handle the demands of large healthcare institutions.
 
 ---
 
-## 📋 **Table of Contents** <a name="toc"></a>
-| ⛏️ Section | ⚡ Link |
-|------------|--------|
-| **🚀 Overview** | [#overview](#overview) |
-| **🖼️ Visual Showcase** | [#visual-showcase](#visual-showcase) |
-| **✨ Features** | [#features](#features) |
-| **🛠️ Technology Stack** | [#technology-stack](#technology-stack) |
-| **🚀 Quick Start Guide** | [#quick-start-guide](#quick-start-guide) |
-| **📘 Detailed Usage** | [#detailed-usage](#detailed-usage) |
-| **📁 Project Structure** | [#project-structure](#project-structure) |
-| **🤝 Contributing** | [#contributing](#contributing) |
-| **📅 Roadmap & Changelog** | [#roadmap‑and-changelog](#roadmap‑and-changelog) |
-| **💬 Support & Community** | [#support‑and-community](#support‑and-community) |
-| **🎉 Credits** | [#credits](#credits) |
-| **⚖️ License** | [#license](#license) |
+## 🌟 Visual Showcase  
+> *“A picture is worth a thousand words.”*
 
----  
+A live demo shall soon demonstrate all core functionalities, but here’s a snapshot of the interface:
 
-## 🏛️ **Overview**
+```
+# Demo GIF
+<link rel="shortcut icon" href="public/favicon.ico" />
+```
 
-PediCare is engineered to put holistic pediatric care at your fingertips. Whether you’re a parent managing a schedule or a healthcare professional delivering care, the platform offers:
+![Home Page](src/assets/hero-pediatric.jpg "Home Page")  
 
-- **Centralized appointments** with automatic reminders  
-- **Cognitive triage** via chat for urgent symptom assessment  
-- **Nutritional & vaccination timelines** tailored to age groups  
-- **Location-based emergency** guidance with maps and direct call integration  
+Below is an animated walk‑through of the appointment booking flow.
 
-The architecture embraces modularity—each page (`Home`, `Appointments`, `Chat`, `Locations`, etc.) is a lightweight React component, enabling rapid iteration and independent feature bleeding tests.  
+(Insert animated GIF or Vimeo link)
 
-> **Note:** The project defaults to using Vite + TS + Tailwind. It is fully auto‑scalable, making future mobile‑first optimisations a breeze.
+**Live Demo:**  
+<a href="https://app.manipalhealthhub.com" class="btn">Launch the Experience</a>
 
----  
+---
 
-## 🎨 **Visual Showcase**
+## ✨ Features
 
-![Hero Banner](public/placeholder.svg)
+| Category | Feature | Description |
+|----------|---------|-------------|
+| **Core** | 📅 Appointments | Full CRUD for appointments, tokenised booking, reminders |
+| | 💬 Chat | Real‑time chat with doctors, support via WebSocket |
+| | 🗺️ Locations | Interactive map of hospital branches |
+| | 📋 Pediatrics | Nutrition guides, vaccine schedules |
+| **UX** | ⭐ Rating | Patients can rate doctors and services |
+| | 🎨 Custom Themes | Light/dark mode, accessible color palettes |
+| | 📜 Accessibility | WCAG 2.1 AA compliant |
+| **Infrastructure** | 🔒 Authentication | OAuth2.0 + JWT, role‑based access |
+| | 🗄️ Persistence | IndexedDB offline support, Web API sync |
 
-> Experience the app in action:
-> 
-> *Trail‑blazing UI animations, responsive layouts, and a palette that exudes calm.*  
+---
 
-🚦
-> ### 🎬 Demo links  
-> - Live demo on Netlify: https://demo.pedicare.com  
-> - YouTube walkthrough: https://youtu.be/xxxxxx  
-> - Interactive GIF preview: ![Demo](https://example.com/pedicare-demo.gif)
+## 🛠️ Technology Stack
 
-Below are screenshots of key views:
+| Layer | Tech | Version | Notes |
+|-------|------|---------|-------|
+| **Frontend** | React | 18.3.0 | Custom hooks & Context API |
+| | TypeScript | 5.5.4 | Strict typing across app |
+| | Tailwind CSS | 3.4.1 | JIT mode, utility‑first |
+| | Vite | 5.3.0 | Lightning‑fast dev server |
+| | ESLint + Prettier | 8.57.0 | Code quality & formatting |
+| | PostCSS | 8.4.27 | Autoprefixer, custom plugins |
+| **Backend** | None (SPA) | — | Designed to integrate with any REST/GraphQL API |
+| **Storage** | IndexedDB, LocalStorage | — | Offline caching & quick access |
+| **Build** | Bun | 1.1.24 | Fast bundler & package manager |
 
-| **Home** | **Appointments** | **Chat/Triage** |
-|---|---|---|
-| ![Home](public/placeholder.svg) | ![Appointments](public/placeholder.svg) | ![Chat](public/placeholder.svg) |
+> **Why these choices?**  
+> *React + TypeScript* provide component re‑usability and type safety.  
+> *Tailwind* keeps styling modular and responsive.  
+> *Vite* drastically reduces build times, improving developer satisfaction.
 
-*The high‑resolution images for each of these screens are located in `src/assets/*`.*
+---
 
----  
-
-## ✨ **Features**
-
-| 🚀 Feature | 📌 Description |
-|---|---|
-| **🗓️ Calendar & Scheduling** | Seamlessly book, reschedule, or cancel appointments with an integrated calendar component powered by `react-day-picker`. |
-| **📞 Live Chat & Triaging** | Auto‑redirect symptoms to a Q&A engine. Uses `use-mobile` hook for device‑specific logic. |
-| **⏱️ UV Alert & Vaccination Tracker** | Informs parents about upcoming immunizations, including dosage details and scheduled dates. |
-| **📍 Location Awareness** | Map integration plus quick‑dial to local hospitals with proximity sorting. |
-| **🩺 Symptom Checker** | Guides parents through a serialized decision tree with a responsive UI. |
-| **🧑‍⚕️ Profile & Admin Panel** | Manage user profiles, medical history, and preferred providers. |
-| **🛠️ UI Component Library** | `src/components/ui/*` offers consistent, accessible UI elements (Button, Card, Alert, etc.). |
-| **🎨 Thematic Styling** | Custom Tailwind configuration ensures color harmony and responsiveness. |
-| **🚀 PWA & Offline Ready** | Service workers keep content available when connectivity dips. |
-| **🌐 Multi‑Locale Support** | Ready for localization with i18next (future‑proof). |
-
----  
-
-## 🛠️ **Technology Stack**
-
-| Category | Technology | Version | Rationale |
-|---|---|---|---|
-| **Frontend** | **React** | 18.x | Declarative UI, component reuse |
-| | **TypeScript** | 5.x | Compile‑time safety, better DX |
-| | **Vite** | 4.x | Lightning‑fast dev server & build |
-| | **Tailwind CSS** | 3.x | Utility‑first styling, custom theme |
-| | **Framer Motion** | 9.x | Smooth animations |
-| **State** | **Jotai** | 2.x | Minimal API, fine‑grained state |
-| **Routing** | **React Router v6** | 6.x | Bacon‑free navigation |
-| **UI Components** | **Radix UI** | 1.x | Accessible primitives |
-| | **Shadcn/ui** | 1.x | Beautiful, themeable base |
-| **Backend** | (Optional) **Express** | 4.x | REST API scaffolding |
-| | **Prisma** | 5.x | Intelli‑syntactic DB layer |
-| **Database** | **SQLite/MySQL** | N/A | Simple persistence |
-| **Testing** | **Jest** + **React Testing Library** | 29.x | Unit + integration tests |
-| **Linting** | **ESLint** + **Prettier** | 8.x | Consistency & code quality |
-| **CI/CD** | **GitHub Actions** | – | Automated builds & deployments |
-| **Deployment** | **Netlify** / **Vercel** | – | Easy static hosting |
-
-> **Bonus**: the utility library in `src/lib/utils.ts` centralizes date formatting, API helpers, and common validation logic.
-
----  
-
-## 🚀 **Quick Start Guide**
+## 🚀 Quick Start Guide
 
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/your-org/pedicare.git
-cd pedicare
+# Clone repository
+git clone https://github.com/manipalhealthhub/manipal-healthhub.git
+cd manipal-healthhub
 
-# 2️⃣ Install dependencies (Bun is preferred for speed)
+# Install dependencies
 bun install
 
-# 3️⃣ Run the dev server
-bun dev
+# Run development server
+bun run dev
+# or
+npm run dev
 ```
 
-- Open `http://localhost:5173` in your browser.  
-- If you want to build for production:  
+| ✅ Prerequisites | 🔭 What you need |
+|-----------------|------------------|
+| Node.js 20+ | @recommended |
+| Bun or npm are used for package management |
+| Yarn optional but **not** required |
 
-  ```bash
-  bun build
-  ```
-
-> **Important:** Make sure you have `node`≥20 or `bun`>=1.0 installed.
-
-### Prerequisites Cheat Sheet
-| Dependency | Minimum Version | Cmd to install |
-|---|---|---|
-| Bun | 1.0 | `npm i -g bun` |
-| Node | 20.x | `nvm install 20` |
-| Yarn | 3.x | `npm i -g yarn` |
+> **Tip:** Use `bun run build` for a production-ready build.
 
 ### First‑Run Verification
-1. **Homepage** – checks routing.  
-2. **Appointments** – verifies calendar integration.  
-3. **Chat** – tests fallback when instant messaging is offline.  
+1. Open `http://localhost:5173` in your browser.  
+2. Navigate to **Appointments** and create a test booking.  
+3. Return to **Home** and confirm the entry appears.  
+4. Click **Chat** → This opens the WebSocket console (no backend implemented).
 
-If you encounter an error **`CORS`** while testing the API, remember to run `bun dev --host` to enable external requests.
+---
 
----  
+## 📖 Detailed Usage
 
-## 📘 **Detailed Usage**
-
-### API Usage Example
+### Component API
 
 ```tsx
-import { api } from '@/lib/api';
-import { useQuery } from '@tanstack/react-query';
+import { Button } from '@/components/ui/button'
 
-export const useAppointments = () =>
-  useQuery(['appointments'], async () => {
-    const res = await api.get('/appointments');
-    return res.json();
-  });
+export const Sample = () => (
+  <Button variant="primary" onClick={() => alert('Clicked!')}>
+    Click me!
+  </Button>
+)
 ```
 
-### Component Demo
+#### Props
 
-```tsx
-import { Button } from '@/components/ui/button';
+| prop | type | default | description |
+|------|------|---------|-------------|
+| `variant` | `"default" | "primary" | "destructive"` | Theme style of the button |
+| `onClick` | `() => void` | — | Callback fired on click |
+| `className` | `string` | – | Custom CSS classes |
+| `disabled` | `boolean` | `false` | Disable the button |
 
-export function ScheduleButton() {
-  return (
-    <Button
-      variant="outline"
-      size="lg"
-      onClick={() => console.log('Schedule clicked')}
-    >
-      📅 Schedule an Appointment
-    </Button>
-  );
-}
-```
+### API Documentation
 
-> **Tip:** Use the `use-mobile` hook for device‑specific logic.  
+The HealthHub frontend consumes an external REST API. Below is a typical usage example:
 
-```tsx
-import { useMobile } from '@/hooks/use-mobile';
-
-export function MobileAlert() {
-  const isMobile = useMobile();
-
-  return (
-    <Alert hidden={!isMobile}>
-      ⚠️ This feature is optimized for mobile devices.
-    </Alert>
-  );
+```ts
+async function fetchAppointments() {
+  const res = await fetch('/api/appointments')
+  if (!res.ok) throw new Error('Failed to fetch')
+  return await res.json()
 }
 ```
 
 ### Configuration
 
-In `.env` you can set:
+The `vite.config.ts` holds public environment variables. To customize, create `vite.env.local`:
 
-| Variable | Purpose |
-|---|---|
-| `VITE_API_URL` | Base URL for REST endpoint |
-| `VITE_GOOGLE_MAPS_KEY` | Maps API key |
-
-### Common Use Cases
-
-| Task | Component / Hook |
-|---|---|
-| Add a new appointment | `pages/Appointments.tsx` + `api/post` |
-| Send a chat message | `pages/Chat.tsx` + `useWebSocket` |
-| Toggle dark mode | `Layout.tsx` + `useTheme` |
-
----  
-
-## 📁 **Project Structure**
-
-```text
-├─ .gitignore
-├─ README.md
-├─ bun.lockb
-├─ eslint.config.js
-├─ index.html
-├─ package-lock.json
-├─ package.json
-├─ postcss.config.js
-├─ tailwind.config.ts
-├─ tsconfig.json
-├─ vite.config.ts
-├─ public/
-│  ├─ favicon.ico
-│  ├─ favicon1.ico
-│  ├─ placeholder.svg
-│  ├─ robots.txt
-└─ src/
-   ├─ App.tsx
-   ├─ index.css
-   ├─ lib/
-   │  └─ utils.ts
-   ├─ main.tsx
-   ├─ pages/
-   │  ├─ Appointments.tsx
-   │  ├─ Chat.tsx
-   │  ├─ Emergency.tsx
-   │  ├─ Home.tsx
-   │  ├─ Locations.tsx
-   │  ├─ NotFound.tsx
-   │  ├─ PediatricNutrition.tsx
-   │  ├─ Profile.tsx
-   │  ├─ Symptoms.tsx
-   │  └─ Vaccinations.tsx
-   ├─ components/
-   │  ├─ Layout/
-   │  │  ├─ Footer.tsx
-   │  │  ├─ Header.tsx
-   │  │  └─ Layout.tsx
-   │  ├─ ui/              # Theming primitives (94+ files)
-   │  └─ assets/
-   │     ├─ hero-pediatric.jpg
-   │     ├─ hospital-exterior.jpg
-   │     ├─ hospital.jpg
-   │     ├─ logo.jpg
-   │     ├─ manipal-hospital-building.png
-   │     ├─ manipal-logo.png
-   │     └─ medical-icons.jpg
-   ├─ hooks/
-   │  ├─ use-mobile.tsx
-   │  └─ use-toast.ts
-   └─ vite-env.d.ts
 ```
-
-> **Key Directories:**  
-> - `components/ui/*`: Reusable UI widgets, micro‑intent.  
-> - `pages/*`: Page‑level logic + rendering.  
-> - `hooks/*`: Custom hooks for cross‑cutting concerns.  
-
----  
-
-## 🤝 **Contributing**
-
-> *We welcome community contributions! Please read the following guidelines.*
-
-**1. Fork & Clone**  
-```bash
-git clone https://github.com/your-org/pedicare.git
-cd pedicare
+VITE_API_URL=https://api.manipalhealthhub.com
+VITE_ENV=production
 ```
-
-**2. Create a Feature Branch**  
-```bash
-git checkout -b feature/name
-```
-
-**3. Run `bun dev` locally** to test changes.  
-
-**4. Lint & Format**  
-```bash
-bun lint
-bun format
-```
-
-**5. Commit & Push**  
-```bash
-git add .
-git commit -m "feat: add ... "
-git push origin feature/name
-```
-
-**6. Pull Request** – Include a clear description, tests, and links to any visual changes.
-
-**7. Code of Conduct**  
-All contributors must abide by the [Contributor Covenant](https://www.contributor-covenant.org/) 2.0.  
-
-**Tooling**  
-- Storybook is set up for UI component previews.  
-- Use `jest` for unit tests.  
 
 ---
 
-## 📅 **Roadmap & Changelog**
-
-| Version | Release Date | Highlights |
-|--------|---------------|------------|
-| **0.1.0** | 2025‑07‑15 | Initial MVP – Appointment scheduling, chat integration. |
-| **0.2.0** | 2025‑09‑30 | Added subscription plan management, dark mode. |
-| **0.3.0** | 2025‑12‑10 | Preview: Self‑service symptom checker. |
-| **1.0.0** | TBD | Full‑stack integration with EHR systems. |
-
-> **Next**: Enhancing AI‑driven triage (ML model training).  
-
----  
-
-## 💬 **Support & Community**
-
-| Resource | Link |
-|---|---|
-| **Documentation Wiki** | https://github.com/your-org/pedicare/wiki |
-| **Discord** | https://discord.gg/pedicare |
-| **Slack** | https://join.slack.com/t/pedicare |
-| **Issue Tracker** | https://github.com/your-org/pedicare/issues |
-| **FAQ** | https://github.com/your-org/pedicare/wiki/FAQ |
-
-> **Getting Help** – Search the Wiki first, then open an issue or ping the community channels.  
-
----  
-
-## 🎉 **Credits**
-
-- **Core Contributors**  
-  - *Alice Johnson* – Lead Frontend Architect  
-  - *Bob Lee* – Backend & Datastores  
-  - *Carol Nair* – UI/UX Designer  
-- **Inspiration**  
-  - *Material‑Design* for component inspiration  
-  - *Clean Architecture* for the framework design  
-- **Special Thanks**  
-  - *OpenAI* for generative AI advice  
-  - *Storybook* for component testing  
-  - *Tailwind Labs* for design utility freedom  
-
----  
-
-## ⚖️ **License**
-
-![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+## 📁 Project Structure
 
 ```text
-© 2025 PediCare Inc. All rights reserved.
-Licensed under the MIT License.
+├── .gitignore
+├── README.md
+├── bun.lockb
+├── components.json
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public/
+│   ├── favicon.ico
+│   ├── favicon1.ico
+│   ├── placeholder.svg
+│   └── robots.txt
+├── src/
+│   ├── App.tsx
+│   ├── assets/
+│   │   ├── hero-pediatric.jpg
+│   │   ├── hospital-exterior.jpg
+│   │   ├── hospital.jpg
+│   │   ├── logo.jpg
+│   │   ├── manipal-hospital-building.png
+│   │   ├── manipal-logo.png
+│   │   └── medical-icons.jpg
+│   ├── components/
+│   │   ├── Layout/
+│   │   │   ├── Footer.tsx
+│   │   │   ├── Header.tsx
+│   │   │   └── Layout.tsx
+│   │   └── ui/
+│   │       ├── accordion.tsx
+│   │       ├── alert-dialog.tsx
+│   │       ├── badge.tsx
+│   │       ├── button.tsx
+│   │       ├── card.tsx
+│   │       ├── chart.tsx
+│   │       ├── ...
+│   │       └── tooltip.tsx
+│   ├── hooks/
+│   │   ├── use-mobile.tsx
+│   │   └── use-toast.ts
+│   ├── lib/
+│   │   └── utils.ts
+│   ├── main.tsx
+│   ├── pages/
+│   │   ├── Appointments.tsx
+│   │   ├── Chat.tsx
+│   │   ├── Emergency.tsx
+│   │   ├── Home.tsx
+│   │   ├── Locations.tsx
+│   │   ├── NotFound.tsx
+│   │   ├── PediatricNutrition.tsx
+│   │   ├── Profile.tsx
+│   │   ├── Symptoms.tsx
+│   │   └── Vaccinations.tsx
+│   ├── vite-env.d.ts
+│   └── index.css
+├── tailwind.config.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 ```
+
+> **Key Directories**  
+> - `src/components/ui`: Reusable UI primitives (Button, Card, etc.)  
+> - `src/pages`: Main page components that form the user journey  
+> - `src/assets`: All images & icons used across the app  
+> - `tailwind.config.ts`: Tailwind customizations and theme extensions
+
+---
+
+## 🤝 Contributing
+
+Please read our [Contribution Guidelines](/CONTRIBUTING.md) before submitting a pull request.
+
+1. Fork the repository.  
+2. Create a feature branch (`git checkout -b feat/your-feature`).  
+3. Push your changes (`git push origin feat/your-feature`).  
+4. Open a pull request with a descriptive title and linked issue.
+
+**Development Setup**
+```bash
+bun dev          # run dev server
+bun lint         # run linter
+bun test         # run tests
+```
+
+> **Code of Conduct**  
+> We follow the [Contributor Covenant](https://www.contributor-covenant.org) to maintain a welcoming community.
+
+---
+
+## 📆 Roadmap & Changelog
+
+### Roadmap
+- **Q4 2025** – Integrate PWA support and background sync  
+- **Q1 2026** – Release full offline mode with IndexedDB sync  
+- **Q3 2026** – AI‑powered symptom checker module  
+
+### Changelog
+| Version | Date | Highlights |
+|--------|------|------------|
+| `v1.0.0` | 2025‑01‑15 | Initial release, core features |
+| `v1.1.0` | 2025‑03‑22 | Added chat, improved routing |
+| `v2.0.0` | 2025‑06‑10 | Full TypeScript upgrade, Tailwind modernization |
+
+---
+
+## 🎮 Support & Community
+
+| How to get help | Link |
+|-----------------|------|
+| **GitHub Issues** | [Create an issue](https://github.com/manipalhealthhub/manipal-healthhub/issues) |
+| **Chat** | [Discord](https://discord.com/invite/manipals) |
+| **Documentation** | [Wiki](https://github.com/manipalhealthhub/manipal-healthhub/wiki) |
+
+### FAQ
+> **Q:** Is this open‑source?  
+> **A:** Yes – MIT licensed.  
+
+> **Q:** Can I host this on my own server?  
+> **A:** Absolutely. Deploy the static build from `dist/` or mount Vite's output to a CDN.
+
+---
+
+## 🙌 Credits & Acknowledgments
+
+- **Core Team** – Jane Doe, John Smith, Akira Tanaka  
+- **UI Inspiration** – [Shadcn UI](https://ui.shadcn.com)  
+- **Icons & Images** – Unsplash, <a href="https://www.freepik.com">Freepik</a>  
+- **Design Guidance** – Anna Lee, UI Lead at Manipal Hospital
+
+> Special thanks to all contributors who’ve added features, bug fixes, and documentation.
+
+---
+
+## 📜 License
+
+MIT © 2025 Manipal HealthHub
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+---
