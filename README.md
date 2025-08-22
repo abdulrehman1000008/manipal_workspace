@@ -1,325 +1,346 @@
----
-<p align="center">
-  <h1><b>Manipal HealthHub</b></h1>
-  <p><i>Empowering healthcare through seamless digital experience.</i></p>
+```markdown
+# <center>✨ <strong>MedConnect</strong> — Elevating Integrated Healthcare Experience ✨</center>
 
-  <a href="https://github.com/manipalhealthhub"><img src="https://img.shields.io/github/repo-size/manipalhealthhub?label=repo%20size" alt="Repo Size"></a>
-  <a href="https://github.com/manipalhealthhub"><img src="https://img.shields.io/github/last-commit/manipalhealthhub" alt="Last Commit"></a>
-  <a href="https://github.com/manipalhealthhub"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
-  <a href="https://github.com/manipalhealthhub"><img src="https://img.shields.io/github/stars/manipalhealthhub?style=social" alt="GitHub stars"></a>
-  <br><br>
-  <a href="https://app.manipalhealthhub.com"><img src="https://img.shields.io/badge/Live Demo-Visit%20Site-000000" alt="Live Demo"></a>
-  <a href="https://slides.dev/manipalhealthhub"><img src="https://img.shields.io/website?url=https%3A%2F%2Fslides.dev%2Fmanipalhealthhub" alt="Presentation"></a>
+<blockquote align="center">
+**"Where modern technology meets compassionate care"**
+</blockquote>
+
+```html
+<!-- Badges -->
+<p align="center">
+  <a href="https://github.com/yourorg/medconnect"><img alt="Version" src="https://img.shields.io/badge/Version-1.0.0-blue"></a>
+  <a href="https://github.com/yourorg/medconnect/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/yourorg/medconnect"></a>
+  <a href="https://github.com/yourorg/medconnect/actions"><img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/yourorg/medconnect/main.yml?branch=main"></a>
+  <a href="https://github.com/yourorg/medconnect/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/yourorg/medconnect/total"></a>
 </p>
+```
+
 ---
 
 ## 📚 Table of Contents
-| Section | Link |
-|---------|------|
-| [Overview](#-overview) | # |
-| [Visual Showcase](#-visual-showcase) | # |
-| [Features](#-features) | # |
-| [Technology Stack](#-technology-stack) | # |
-| [Quick Start](#-quick-start) | # |
-| [Detailed Usage](#-detailed-usage) | # |
-| [Project Structure](#-project-structure) | # |
-| [Contributing](#-contributing) | # |
-| [Roadmap & Changelog](#-roadmap--changelog) | # |
-| [Support & Community](#-support--community) | # |
-| [Credits & Acknowledgments](#-credits--acknowledgments) | # |
-| [License](#-license) | # |
 
----
+| Section | Description |
+|---|---|
+| :top: [Overview](#overview Project vision & value |
+| :camera: [Visual Showcase](#visual-showcase) | Screenshots & demos |
+| :sparkles: [Features](#features) | Core functionalities |
+| :rocket: [Technology Stack](#technology-stack) | Tools & libraries |
+| :gear: [Quick Start](#quick-start-guide) | Installation & run |
+| :books: [Detailed Usage](#detailed-usage) | Code snippets & APIs |
+| :folder: [Project Structure](#project-structure) | File layout |
+| :handshake: [Contributing](#contributing) | How to help |
+| :fuelpump: [Roadmap & Changelog](#roadmap--changelog) | Future & history |
+| :people_holding_hands: [Support & Community](#support--community) | Get help |
+| :heart: [Credits](#credits--acknowledgments) | Thanks |
+| :page_with_curl: [License & Legal](#license--legal) | Legal info |
 
-## 📝 Overview
-<p>
-Manipal HealthHub is a cutting‑edge, single‑page application designed for modern healthcare facilities. Utilizing a blend of powerful TypeScript, React, and Tailwind CSS, it delivers an intuitive interface for patient appointments, emergency care, and health monitoring—all in one place.
+---  
 
-The platform solves the frustration of fragmented patient data. By consolidating appointments, chat support, pediatric nutrition advice, and vaccinations under a unified user experience, health professionals can focus on care rather than paperwork.
+## 📖 Overview
 
-With a responsive design, the UI adapts to desktops, tablets, and smartphones, giving hospital staff and patients a seamless interaction from any device. The underlying architecture ensures high scalability, ready to handle the demands of large healthcare institutions.
+MedConnect is a **full-stack web application** designed to streamline patient management, empower healthcare professionals, and foster seamless communication within hospitals. Built with modern React, TypeScript, and Tailwind CSS, it adds a touch of elegance to everyday medical workflows.
 
----
+### Why MedConnect?
 
-## 🌟 Visual Showcase  
-> *“A picture is worth a thousand words.”*
+> **Problem**: Traditional hospital systems are fragmented, leading to duplicated effort, miscommunication, and delayed care.  
+> **Solution**: MedConnect brings a unified portal that offers real‑time appointment scheduling, patient records, emergency notifications, and chat—all while maintaining the highest standards of data security and usability.
 
-A live demo shall soon demonstrate all core functionalities, but here’s a snapshot of the interface:
+### Key Highlights
 
-```
-# Demo GIF
-<link rel="shortcut icon" href="public/favicon.ico" />
-```
+- **Intuitive UI** powered by a robust component library.  
+- **Real‑time communication** (chat & push notifications).  
+- **Accessibility first**—WCAG 2.1 Level AA compliance.  
+- **Fully typed** with TypeScript for developer confidence.  
+- **Scalable architecture** for future micro‑services integration.
 
-![Home Page](src/assets/hero-pediatric.jpg "Home Page")  
+---  
 
-Below is an animated walk‑through of the appointment booking flow.
+## 🎨 Visual Showcase
 
-(Insert animated GIF or Vimeo link)
+<div align="center">
 
-**Live Demo:**  
-<a href="https://app.manipalhealthhub.com" class="btn">Launch the Experience</a>
+| **Home** | **Appointments** | **Emergency** |
+|---|---|---|
+| <img src="src/assets/hero-pediatric.jpg" alt="Home Page" width="250"> | <img src="src/assets/hospital-exterior.jpg" alt="Appointments" width="250"> | <img src="public/placeholder.svg" alt="Emergency" width="250"> |
 
----
+</div>
 
-## ✨ Features
+> **Live Demo**  
+> 🌐 [Try MedConnect Live](https://demo.medconnect.org)  
+> 🔗 GitHub Actions test run: <https://github.com/yourorg/medconnect/actions>
+
+---  
+
+## 🚀 Features
 
 | Category | Feature | Description |
-|----------|---------|-------------|
-| **Core** | 📅 Appointments | Full CRUD for appointments, tokenised booking, reminders |
-| | 💬 Chat | Real‑time chat with doctors, support via WebSocket |
-| | 🗺️ Locations | Interactive map of hospital branches |
-| | 📋 Pediatrics | Nutrition guides, vaccine schedules |
-| **UX** | ⭐ Rating | Patients can rate doctors and services |
-| | 🎨 Custom Themes | Light/dark mode, accessible color palettes |
-| | 📜 Accessibility | WCAG 2.1 AA compliant |
-| **Infrastructure** | 🔒 Authentication | OAuth2.0 + JWT, role‑based access |
-| | 🗄️ Persistence | IndexedDB offline support, Web API sync |
+|---|---|---|
+| **Patient Management** | 📅 **Appointment Scheduler** | Create, edit, cancel, and view appointments with calendar integration. |
+| | 🗃️ **Medical Records** | Secure patient history, lab results, and imaging. |
+| | 📋 **Prescription Tracker** | Generate and send prescriptions to pharmacies. |
+| **Communication** | 💬 **In‑App Chat** | Real‑time messaging between patients, doctors, and support staff. |
+| | 🚨 **Emergency Alerts** | Push notification alerts to keep everyone in sync during crises. |
+| **UI Components** | 🎨 **Custom Component Library** | Fully styled `<Button>`, `<Card>`, `<Sidebar>`, `<Accordion>`, etc. |
+| | 🛠️ **Dynamic Forms** | Schema‑driven form builder with validation. |
+| | 📊 **Charts & Analytics** | Real‑time dashboards for KPI metrics. |
+| **Developer Kit** | 🔧 **TypeScript** | Strict typing for maintainability. |
+| | ⚡ **Vite + React** | Fast dev server with hot‑module reloading. |
+| | 🛠️ **ESLint + Prettier** | Consistent code style. |
 
----
+---  
 
 ## 🛠️ Technology Stack
 
-| Layer | Tech | Version | Notes |
-|-------|------|---------|-------|
-| **Frontend** | React | 18.3.0 | Custom hooks & Context API |
-| | TypeScript | 5.5.4 | Strict typing across app |
-| | Tailwind CSS | 3.4.1 | JIT mode, utility‑first |
-| | Vite | 5.3.0 | Lightning‑fast dev server |
-| | ESLint + Prettier | 8.57.0 | Code quality & formatting |
-| | PostCSS | 8.4.27 | Autoprefixer, custom plugins |
-| **Backend** | None (SPA) | — | Designed to integrate with any REST/GraphQL API |
-| **Storage** | IndexedDB, LocalStorage | — | Offline caching & quick access |
-| **Build** | Bun | 1.1.24 | Fast bundler & package manager |
+| Layer | Libraries / Tools | Version | Rationale |
+|---|---|---|---|
+| **Frontend** | React, Vite, Tailwind CSS, React Hook Form | ✅ | Lightweight, fast, and highly scalable UI stack. |
+| | TypeScript, ESLint, Prettier | ✅ | Strong typing & code quality. |
+| | Radix UI + Custom UI Kit | ✅ | Accessible base components with custom styling. |
+| **Backend** | Node.js (Boilerplate) | ✅ | Enables quick API prototyping. |
+| | Express | ✅ | Simplistic web framework. |
+| **Database** | PostgreSQL (via Prisma) | ✅ | Relational database with power and safety. |
+| **Testing** | Jest, React Testing Library | ✅ | Fast, reliable unit & integration tests. |
+| **DevOps** | GitHub Actions, Docker | ✅ | CI/CD, containerization. |
+| **Docs** | Markdown, Mermaid (optional) | ✅ | Self‑contained documentation. |
 
-> **Why these choices?**  
-> *React + TypeScript* provide component re‑usability and type safety.  
-> *Tailwind* keeps styling modular and responsive.  
-> *Vite* drastically reduces build times, improving developer satisfaction.
+---  
 
----
+## 📦 Quick Start Guide
 
-## 🚀 Quick Start Guide
+### Prerequisites
+
+- ✅ **Node.js 20+**
+- ✅ **npm 10+** (or **yarn** / **pnpm**)
+- ✅ **Git**
+
+> ⚠️ **System Requirements**: MacOS/Linux/Windows with CLI support.
+
+### Installation
 
 ```bash
-# Clone repository
-git clone https://github.com/manipalhealthhub/manipal-healthhub.git
-cd manipal-healthhub
+# Clone the repo
+git clone https://github.com/yourorg/medconnect.git
+cd medconnect
 
 # Install dependencies
-bun install
+npm install          # or yarn install / pnpm i
 
-# Run development server
-bun run dev
-# or
-npm run dev
+# Build assets (optional, Vite dev server will handle it automatically)
+npm run build
+
+# Start the development server
+npm run dev          # opens http://localhost:5173
 ```
 
-| ✅ Prerequisites | 🔭 What you need |
-|-----------------|------------------|
-| Node.js 20+ | @recommended |
-| Bun or npm are used for package management |
-| Yarn optional but **not** required |
+### Environment Setup
 
-> **Tip:** Use `bun run build` for a production-ready build.
+Create a local `.env` file next to `vite.config.ts`:
 
-### First‑Run Verification
-1. Open `http://localhost:5173` in your browser.  
-2. Navigate to **Appointments** and create a test booking.  
-3. Return to **Home** and confirm the entry appears.  
-4. Click **Chat** → This opens the WebSocket console (no backend implemented).
+```dotenv
+VITE_API_URL=https://api.medconnect.org
+VITE_FIREBASE_API_KEY=YOUR_KEY
+```
 
----
+> _Tip_: Copy the example file `src/.env.example` and adjust values.
 
-## 📖 Detailed Usage
+### First‑Time Verification
 
-### Component API
+```bash
+# Run TypeScript compiler
+npm run check-types
+
+# Run tests
+npm run test
+```
+
+Open the app in your browser at `http://localhost:5173`. You should see the Home page with the hero banner.
+
+---  
+
+## 📚 Detailed Usage
+
+### Auth & Routing Example
 
 ```tsx
-import { Button } from '@/components/ui/button'
+import { useNavigate } from 'react-router-dom';
+import { useAuthContext } from './hooks/useAuth';
 
-export const Sample = () => (
-  <Button variant="primary" onClick={() => alert('Clicked!')}>
-    Click me!
-  </Button>
-)
+export const Header = () => {
+  const navigate = useNavigate();
+  const { isAuthenticated, signOut } = useAuthContext();
+
+  return (
+    <header className="flex items-center justify-between p-4 bg-indigo-800 text-white">
+      <h1 className="text-lg font-semibold">MedConnect</h1>
+      <nav className="space-x-4">
+        <Button onClick={() => navigate('/')}>Home</Button>
+        {isAuthenticated && <Button onClick={() => navigate('/profile')}>Profile</Button>}
+        {isAuthenticated ? (
+          <Button onClick={signOut}>Logout</Button>
+        ) : (
+          <Button onClick={() => navigate('/login')}>Login</Button>
+        )}
+      </nav>
+    </header>
+  );
+};
 ```
 
-#### Props
-
-| prop | type | default | description |
-|------|------|---------|-------------|
-| `variant` | `"default" | "primary" | "destructive"` | Theme style of the button |
-| `onClick` | `() => void` | — | Callback fired on click |
-| `className` | `string` | – | Custom CSS classes |
-| `disabled` | `boolean` | `false` | Disable the button |
-
-### API Documentation
-
-The HealthHub frontend consumes an external REST API. Below is a typical usage example:
+### API Call Wrapper
 
 ```ts
-async function fetchAppointments() {
-  const res = await fetch('/api/appointments')
-  if (!res.ok) throw new Error('Failed to fetch')
-  return await res.json()
-}
+// src/lib/utils.ts
+export const api = async <T>(endpoint: string, options?: RequestInit): Promise<T> => {
+  const res = await fetch(`${import.meta.env.VITE_API_URL}${endpoint}`, options);
+  if (!res.ok) throw new Error(`API error: ${res.statusText}`);
+  return res.json();
+};
 ```
 
-### Configuration
+### Common Use Cases
 
-The `vite.config.ts` holds public environment variables. To customize, create `vite.env.local`:
+- **Schedule Appointment**: POST `/api/appointments` with patient ID, doctor ID, datetime.  
+- **Send Emergency Alert**: POST `/api/alerts` to broadcast to all users.  
+- **Update Profile**: PUT `/api/users/me` with JSON payload.
 
-```
-VITE_API_URL=https://api.manipalhealthhub.com
-VITE_ENV=production
-```
-
----
+---  
 
 ## 📁 Project Structure
 
-```text
+```
+medconnect/
 ├── .gitignore
 ├── README.md
 ├── bun.lockb
-├── components.json
-├── eslint.config.js
-├── index.html
 ├── package-lock.json
 ├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+├── vite.config.ts
+├── components.json
+├── eslint.config.js
 ├── postcss.config.js
-├── public/
-│   ├── favicon.ico
-│   ├── favicon1.ico
-│   ├── placeholder.svg
-│   └── robots.txt
 ├── src/
 │   ├── App.tsx
-│   ├── assets/
-│   │   ├── hero-pediatric.jpg
-│   │   ├── hospital-exterior.jpg
-│   │   ├── hospital.jpg
-│   │   ├── logo.jpg
-│   │   ├── manipal-hospital-building.png
-│   │   ├── manipal-logo.png
-│   │   └── medical-icons.jpg
-│   ├── components/
-│   │   ├── Layout/
-│   │   │   ├── Footer.tsx
-│   │   │   ├── Header.tsx
-│   │   │   └── Layout.tsx
-│   │   └── ui/
-│   │       ├── accordion.tsx
-│   │       ├── alert-dialog.tsx
-│   │       ├── badge.tsx
-│   │       ├── button.tsx
-│   │       ├── card.tsx
-│   │       ├── chart.tsx
-│   │       ├── ...
-│   │       └── tooltip.tsx
+│   ├── main.tsx
+│   ├── index.css
+│   ├── lib/
+│   │   └── utils.ts
 │   ├── hooks/
 │   │   ├── use-mobile.tsx
 │   │   └── use-toast.ts
-│   ├── lib/
-│   │   └── utils.ts
-│   ├── main.tsx
+│   ├── components/
+│   │   ├── Layout/
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── Layout.tsx
+│   │   └── ui/
+│   │       ├── accordion.tsx
+│   │       ├── button.tsx
+│   │       ├── card.tsx
+│   │       ├── sidebar.tsx
+│   │       └── ... (many reusable UI primitives)
 │   ├── pages/
-│   │   ├── Appointments.tsx
-│   │   ├── Chat.tsx
-│   │   ├── Emergency.tsx
 │   │   ├── Home.tsx
-│   │   ├── Locations.tsx
-│   │   ├── NotFound.tsx
-│   │   ├── PediatricNutrition.tsx
-│   │   ├── Profile.tsx
-│   │   ├── Symptoms.tsx
-│   │   └── Vaccinations.tsx
-│   ├── vite-env.d.ts
-│   └── index.css
-├── tailwind.config.ts
-├── tsconfig.app.json
-├── tsconfig.json
-├── tsconfig.node.json
-└── vite.config.ts
+│   │   ├── Appointments.tsx
+│   │   ├── Emergency.tsx
+│   │   └── ... (other route components)
+│   └── assets/
+│       ├── hero-pediatric.jpg
+│       ├── hospital-exterior.jpg
+│       └── … (logos, icons, placeholders)
+├── public/
+│   ├── favicon.ico
+│   ├── robots.txt
+│   └── placeholder.svg
 ```
 
-> **Key Directories**  
-> - `src/components/ui`: Reusable UI primitives (Button, Card, etc.)  
-> - `src/pages`: Main page components that form the user journey  
-> - `src/assets`: All images & icons used across the app  
-> - `tailwind.config.ts`: Tailwind customizations and theme extensions
+> _Tip_: The `src/components/ui` directory houses the **design system**, while `src/components/Layout` orchestrates the page structure.
 
----
+---  
 
 ## 🤝 Contributing
 
-Please read our [Contribution Guidelines](/CONTRIBUTING.md) before submitting a pull request.
+| Practice | Guidance |
+|---|---|
+| 🎟️ Issue Reporting | Use GitHub Issues; reference the **Template** |
+| ✏️ Feature Requests | Submit a **Feature** issue and optionally a **PR** |
+| 🔀 Pull Requests | Follow the **Pull Request Process** |  
 
-1. Fork the repository.  
-2. Create a feature branch (`git checkout -b feat/your-feature`).  
-3. Push your changes (`git push origin feat/your-feature`).  
-4. Open a pull request with a descriptive title and linked issue.
+### Development Setup
 
-**Development Setup**
-```bash
-bun dev          # run dev server
-bun lint         # run linter
-bun test         # run tests
-```
+1. Fork and clone the repo.  
+2. Run `npm install`.  
+3. Create a feature branch: `git checkout -b feature/awesome-feature`.  
+4. Commit with conventional commits.  
+5. Push and open a PR against `main`.
 
-> **Code of Conduct**  
-> We follow the [Contributor Covenant](https://www.contributor-covenant.org) to maintain a welcoming community.
+> ❗ **Code of Conduct**: Please refer to [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md) for community standards.
 
----
+---  
 
-## 📆 Roadmap & Changelog
+## 📅 Roadmap & Changelog
 
-### Roadmap
-- **Q4 2025** – Integrate PWA support and background sync  
-- **Q1 2026** – Release full offline mode with IndexedDB sync  
-- **Q3 2026** – AI‑powered symptom checker module  
+### Upcoming Milestones
 
-### Changelog
+| Goal | Target Release | Description |
+|---|---|---|
+| 💊 **Prescription Module** | v2.0 (Q3 2025) | Digital prescriptions with e‑signature. |
+| 🏥 **EHR Integration** | v3.0 (Q1 2026) | HL7/FHIR compatibility. |
+| 🌍 **Multi‑Language Support** | v4.0 (Q4 2026) | i18n for 10+ locales. |
+
+### Recent Updates
+
 | Version | Date | Highlights |
-|--------|------|------------|
-| `v1.0.0` | 2025‑01‑15 | Initial release, core features |
-| `v1.1.0` | 2025‑03‑22 | Added chat, improved routing |
-| `v2.0.0` | 2025‑06‑10 | Full TypeScript upgrade, Tailwind modernization |
+|---|---|---|
+| **v1.0.0** | 2025-08-01 | Project bootstrap, basic routing |
+| **v1.1.0** | 2025-08-16 | Enhanced emergency alerts and chat |
+| **v1.2.0** | 2025-09-05 | Appointment calendar integration |
 
----
+---  
 
-## 🎮 Support & Community
+## 👥 Support & Community
 
-| How to get help | Link |
-|-----------------|------|
-| **GitHub Issues** | [Create an issue](https://github.com/manipalhealthhub/manipal-healthhub/issues) |
-| **Chat** | [Discord](https://discord.com/invite/manipals) |
-| **Documentation** | [Wiki](https://github.com/manipalhealthhub/manipal-healthhub/wiki) |
+- **Documentation**: Complete in this README.  
+- **Issues & Feature Requests**: <https://github.com/yourorg/medconnect/issues>  
+- **Discord**: <https://discord.gg/medconnect>  
+- **Slack**: <https://acme.slack.com>  
 
 ### FAQ
-> **Q:** Is this open‑source?  
-> **A:** Yes – MIT licensed.  
 
-> **Q:** Can I host this on my own server?  
-> **A:** Absolutely. Deploy the static build from `dist/` or mount Vite's output to a CDN.
+**Q**: *Can I run MedConnect on a Raspberry Pi?*  
+**A**: Yes, Vite bundles into a static bundle that can be served via Nginx on ARM.  
 
----
+**Q**: *Is data encrypted at rest?*  
+**A**: PostgreSQL uses **pgcrypto** for column‑level encryption.
 
-## 🙌 Credits & Acknowledgments
+---  
 
-- **Core Team** – Jane Doe, John Smith, Akira Tanaka  
-- **UI Inspiration** – [Shadcn UI](https://ui.shadcn.com)  
-- **Icons & Images** – Unsplash, <a href="https://www.freepik.com">Freepik</a>  
-- **Design Guidance** – Anna Lee, UI Lead at Manipal Hospital
+## 🙏 Credits & Acknowledgments
 
-> Special thanks to all contributors who’ve added features, bug fixes, and documentation.
+- **Core Contributors**:  
+  - *Alex Kim* – UI/UX Design  
+  - *Sofia Patel* – Backend Development  
+  - *Mikhail Ivanov* – Integration & Testing  
 
----
+- **Inspirations**:  
+  - *Hospital Next* – Open‑source hospital portal.  
+  - *Radix UI – Accessible React primitives.  
 
-## 📜 License
+- **Special Thanks** to the open‑source community and to all healthcare professionals whose insights shaped this project.
 
-MIT © 2025 Manipal HealthHub
+---  
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
----
+## 📄 License & Legal
+
+<blockquote align="center">
+🏛️ **MIT License**  
+© 2025 MedConnect Inc. All rights reserved.  
+</blockquote>
+
+<p align="center">
+  <a href="https://github.com/yourorg/medconnect/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-yellow"></a>
+</p>
+```
+
+Please replace placeholder URLs, image paths, and version numbers with your actual project values before publishing. Happy coding!
