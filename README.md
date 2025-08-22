@@ -1,321 +1,299 @@
-# <div align="center">Pediatric Health Portal</div>
+<p align="center">
+  <img src="https://placehold.co/800x200/2a2a2a/ffffff?text=Project+Banner" alt="Project Banner">
+</p>
 
-<div align="center">Your modern, patient‑centric platform for pediatric care</div>
+<h1 align="center">Manipal Hospital Web Portal</h1>
 
-<div align="center">
-  <img alt="Version" src="https://img.shields.io/github/package-json/v/your-org/health-portal?style=flat-square&logo=github" />
-  <img alt="License" src="https://img.shields.io/github/license/your-org/health-portal?style=flat-square&logo=github" />
-  <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/your-org/health-portal/main.yml?style=flat-square&logo=github" />
-</div>
+<p align="center">
+  <em>Seamless patient care, right at your fingertips.</em>
+</p>
 
----  
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+  <img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build Status">
+</p>
 
-## 📚 Table of Contents
-- [Overview](#-overview)
-- [Visual Showcase](#-visual-showcase)
-- [Features](#-features)
-- [Technology Stack](#-technology-stack)
-- [Quick Start Guide](#-quick-start-guide)
-- [Detailed Usage](#-detailed-usage)
-- [Project Structure](#-project-structure)
-- [Contributing](#-contributing)
-- [Roadmap & Changelog](#-roadmap--changelog)
-- [Support & Community](#-support--community)
-- [Credits & Acknowledgments](#-credits--acknowledgments)
-- [License & Legal](#-license--legal)
+---
 
----  
+<details open>
+<summary><strong>Table of Contents 🚀</strong></summary>
 
-## ✨ Overview  
-The Pediatric Health Portal is a responsive, single‑page application designed to bring together all essential services for families, caregivers, and healthcare providers. Crafted with modern web technologies, it provides a seamless experience for scheduling appointments, accessing pediatric nutrition guidance, and receiving real‑time chat support—all within a secure, intuitive interface.
+| Section | Emoji |
+|---------|-------|
+| [Overview](#overview) | 📄 |
+| [Visual Showcase](#visual-showcase) | 🖼️ |
+| [Features](#features) | ✨ |
+| [Technology Stack](#technology-stack) | 🛠️ |
+| [Quick Start](#quick-start-guide) | 🏁 |
+| [Usage](#detailed-usage) | 💻 |
+| [Project Structure](#project-structure) | 📁 |
+| [Contributing](#contributing) | 🤝 |
+| [Roadmap & Changelog](#roadmap--changelog) | 📅 |
+| [Support & Community](#support--community) | 💬 |
+| [Credits & Acknowledgments](#credits--acknowledgments) | 🙌 |
+| [License](#license--legal) | 📜 |
 
-At its core, the portal tackles the silence around child health by:
-- **Centralizing information**: One place for appointments, locations, medication schedules, and educational content.
-- **Automating triage**: Quick symptom assessment and wearable integration for proactive care.
-- **Enabling empathy‑first communication**: Live chat with specialists and community forums powered by secure sockets.
+</details>
 
-> **Why now?**  The surge in telehealth and the need for pediatric patients to navigate COVID‑19‑era care has amplified the demand for a clear, dedicated platform. **Our solution** is intuitive, modular, and ready for hospitals nationwide.
+---
 
----  
+## Overview 📄
 
-## 🎨 Visual Showcase  
-![Hero Image](/src/assets/hero-pediatric.jpg)  
+The **Manipal Hospital Web Portal** is a modern, responsive single‑page application that empowers patients, staff, and administrators to manage healthcare services with ease. Built with React, TypeScript, Vite, and Tailwind CSS, the portal streamlines common hospital functions such as appointment scheduling, symptom tracking, vaccination records, and real‑time chat support.
 
-### Demo
-- **GIF** – Quick look at the appointment flow:  
-  ![Appointment Flow](/public/placeholder.svg)
-- **Live Demo** – Interact here:  
-  <a href="https://demo-health-portal.com" target="_blank"><img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen" /></a>
+### Why This Portal?
 
----  
+- **Patient‑Centric Design** – A clean interface that guides users from home to appointment booking, without technical jargon.
+- **Comprehensive Healthcare Toolkit** – From pediatric nutrition guides to emergency triage, the portal gathers all information in one place.
+- **Secure & Scalable** – Built on a modern toolchain, the application is designed to integrate with backend APIs and grow with hospital needs.
 
-## 🎯 Features  
+> **Note:** This project is currently a **front‑end prototype**. Backend services (API endpoints, database, authentication) are planned for future releases.
 
-| Category            | Feature | Description |
-|---------------------|---------|-------------|
-| **UI Components**   | 🧩 Reusable Radix UI | Accessible, composable pieces for forms, dialogues, and navigation. |
-|                     | 🎨 Tailwind CSS | Utility‑first styling that scales with the design system. |
-| **Pages**           | 📅 Appointments | Schedule, reschedule, and cancel visits with calendar integration. |
-|                     | 💬 Chat | Live chat powered by WebSocket with real‑time notifications. |
-| **Hooks**           | 📱 use‑mobile | Responsive hooks to adjust layout based on viewport size. |
-| **Utilities**       | 🔧 use‑toast | Central toast manager for notifications across the app. |
-| **Testing**         | 🧪 Jest + React Testing Library | Unit and integration tests ensuring feature stability. |
-| **Deployment** | 🚀 Vite + CI/CD | Fast dev builds, optimized production builds, GitHub Actions for continuous delivery. |
+---
 
----  
+## Visual Showcase 🖼️
 
-## 🛠️ Technology Stack  
+> **Live Demo** (temporarily hosted on Netlify)  
+> <a href="https://example.netlify.app" target="_blank"><img src="https://img.shields.io/badge/Live‑Demo-blue?style=for-the-badge" alt="Live Demo"></a>
 
-| Layer | Technology | **Why It Matters** |
-|-------|------------|-------------------|
-| **Frontend** | **React 18** + **TypeScript** | Strong typing, optimal performance, and rich ecosystem. |
-| | **Vite** | Lightning‑fast bundling and hot module replacement. |
-| | **Tailwind CSS** + **PostCSS** | Rapid UI building with a custom design system. |
-| | **Radix UI** | Accessible, unstyled primitives for building high‑quality components. |
-| **Backend** | **Node.js** (express, optional) | Lightweight server, zero‑config scaling. |
-| | **Health‑API** (REST/GraphQL) | Real‑time data interface for appointments and patient records. |
-| **Database** | **PostgreSQL** |ID guarantees for medical data with robust querying. |
-| | **Prisma ORM** | Type‑safe database layer linking TS with SQL. |
-| **DevOps** | **GitHub Actions** | CI/CD, linting, and automated deployments. |
-| | **Docker** | Reproducible dev and prod environments. |
-| **Testing** | **Jest** + **React Testing Library** | Comprehensive unit tests with snapshots & DOM queries. |
+| Home  | Appointments | Chat |
+|-------|--------------|------|
+| ![Home](https://placehold.co/400x300) | ![Appointments](https://placehold.co/400x300) | ![Chat](https://placehold.co/400x300) |
 
----  
+> **GIF Demonstration**  
+> <a href="https://example.com/demo.gif"><img src="https://placehold.co/600x300?text=Demo+GIF" alt="Demo GIF" /></a>
 
-## 🚀 Quick Start Guide  
+---
 
-### Prerequisites  
-- **Node.js** 20.x or higher  
-- **pnpm** (recommended) or **npm**  
-- **Git**  
+## Features ✨
+
+| Category | Feature | Description |
+|----------|---------|-------------|
+| **Patient Management** | 🏥 **Dashboard** | Consolidate patient records, visit history, and doctor notes. |
+| | 📄 **Medical Records** | View, download, and annotate PDFs and images. |
+| | 📈 **Analytics** | Visual reports on patient outcomes and facility usage. |
+| **Scheduling & Appointments** | 📅 **Calendar** | Book and reschedule appointments with instant confirmation. |
+| | 🔔 **Reminders** | Email/SMS reminders for upcoming visits. |
+| | 📌 **Location Finder** | Interactive map to hospital buildings and parking. |
+| **Communication** | 💬 **Chat** | Real‑time chat with hospital staff for instant support. |
+| | ✉️ **Notifications** | Browser notifications for critical updates (e.g., emergencies). |
+| **Utilities** | 🎨 **Theme Switcher** | Light/Dark mode and custom color palettes. |
+| | 📦 **SVG/Lottie Animations** | Engaging visual feedback for actions. |
+| | 📱 **Responsive Design** | Optimized for mobile, tablet, and desktop. |
+
+*All components are built using a fully‑typed component library (`src/components/ui`) inspired by Radix UI and Tailwind.*
+
+---
+
+## Technology Stack 🛠️
+
+| Layer | Technology | Version | Reason |
+|-------|------------|---------|--------|
+| **Frontend** | **React** | ^18.2.0 | Declarative UI and component‑centric architecture. |
+|  | **TypeScript** | ^5.0.0 | Strong typing for developer confidence. |
+|  | **Vite** | ^4.0.0 | Lightning‑fast dev server and build. |
+|  | **Tailwind CSS** | ^3.3.0 | Utility‑first styling and custom theme. |
+|  | **PostCSS** | ^8.4.0 | Handles CSS transforms and autoprefixing. |
+|  | **ESLint** | ^8.0.0 | Consistent linting rules across the codebase. |
+|  | **Prettier** | ^3.0.0 | Automated code formatting. |
+| **Build Tool** | **Bun** | ^0.5.0 | Optional ‑ supports `bun install`. |
+| **Package JSON** | **NPM** | latest | Standard package manager. |
+| **Testing** | **Jest + Testing Library** | *planned* | Future unit/integration testing. |
+
+> **Why Tailwind?**  
+> Tailwind drastically reduces CSS bloat, enables rapid prototyping, and fits perfectly with React's JSX syntax, keeping styles next to the components that use them.
+
+---
+
+## Quick Start Guide 🏁
+
+### Prerequisites 📦
+
+- **Node.js** v20+ (recommended)
+- **Bun** (optional, to run the `bun install` alias)
+- Git
+
+### Installation 🚀
 
 ```bash
-# Clone the repo
-git clone https://github.com/your-org/health-portal.git
-cd health-portal
+# Clone repository
+git clone https://github.com/your-username/manipal-hospital-portal.git
+cd manipal-hospital-portal
 
-# Install dependencies (pnpm recommended)
-pnpm i
+# Install dependencies
+npm install          # or bun install
+
+# Run development server
+npm run dev          # or bun dev
+
+# Open in browser
+# Default: http://localhost:5173
 ```
 
-### Development Server  
+> **Tip:** Use `npm run build` to generate a production build ready for deployment.
+
+### Verify First Run ✔️
 
 ```bash
-pnpm dev
+# Ensure the main page loads
+open http://localhost:5173  # or use your preferred browser
+
+# Check console for any errors
+# All UI components should render without warnings
 ```
 
-Open <http://localhost:5173> in your browser.
+---
 
-### Build for Production  
+## Detailed Usage 💻
 
-```bash
-pnpm build
-pnpm preview   # Test production bundle locally
-```
+### Component API
 
-### Common Commands  
+All UI components live under `src/components/ui`. They are fully typed and follow Radix‑style conventions. Example usage:
 
-| Command | Purpose |
-|--------|---------|
-| `pnpm lint` | Run ESLint & Prettier |
-| `pnpm test` | Run Jest test suite |
-| `pnpm prettier:check` | Verify code formatting |
-
----  
-
-## 📚 Detailed Usage  
-
-### Function Example – `useMobile.tsx`  
 ```tsx
-import { useEffect, useState } from 'react';
-const breakpoint = 768;
+import { Button, Card, Avatar } from '@/components/ui';
 
-export function useMobile() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= breakpoint);
-  useEffect(() => {
-    const onResize = () => setIsMobile(window.innerWidth <= breakpoint);
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
-  }, []);
-  return isMobile;
+export default function Profile() {
+  return (
+    <Card>
+      <Avatar src="https://placehold.co/80x80" alt="User" />
+      <h2 className="text-xl font-semibold">John Doe</h2>
+      <Button variant="outline">Edit Profile</Button>
+    </Card>
+  );
 }
 ```
 
-### API Call Example – `src/lib/utils.ts`  
+### Routing
 
 ```ts
-export async function fetchAppointments() {
-  const res = await fetch('/api/appointments');
-  if (!res.ok) throw new Error('Network response was not ok');
-  return res.json();
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { App } from './App';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <Router>
+    <App />
+  </Router>
+);
+```
+
+### API Integration
+
+```ts
+import { useToast } from '@/components/ui/use-toast';
+
+function fetchAppointments() {
+  fetch('/api/appointments')
+    .then(res => res.json())
+    .then(data => {
+      // handle appointments
+    })
+    .catch(err => {
+      useToast().toast({ title: 'Error', description: err.message, variant: 'destructive' });
+    });
 }
 ```
 
-> **Tip**: Use `React Query` (now TanStack Query) for advanced caching and background refetching.
+> **Configuration** – All API endpoints can be set in `public/robots.txt` or a dedicated `.env` file.  
 
-### Page Example – `src/pages/Appointment.tsx`  
+> **Security** – Future releases will integrate JWT-based authentication and role‑based access.
 
-```tsx
-import { Calendar } from '@/components/ui/calendar';
-import { Button } from '@/components/ui/button';
+---
 
-export default function Appointments() {
-   const [date, setDate] = useState<Date | null>(null);
-   return (
-      <section>
-        <h2>Schedule an Appointment</h2>
-        <Calendar selectionMode="single" value={date} onChange={setDate} />
-        <Button disabled={!date}>Book Now</Button>
-      </section>
-   );
-}
-```
-
----  
-
-## 📁 Project Structure  
+## Project Structure 📁
 
 ```
-health-portal/
-├── public/
-│   ├── favicon.ico
-│   ├── favicon1.ico
-│   ├── placeholder.svg
-│   └── robots.txt
+.
+├── public/                 # Static assets
+│   ├─ favicon.ico
+│   ├─ placeholder.svg
+│   └─ ...
 ├── src/
-│   ├── assets/
-│   │   ├── hero-pediatric.jpg
-│   │   ├── hospital-exterior.jpg
-│   │   ├── hospital.jpg
-│   │   ├── logo.jpg
-│   │   ├── manipal-hospital-building.png
-│   │   ├── manipal-logo.png
-│   │   └── medical-icons.jpg
-│   ├── components/
-│   │   ├── Layout/
-│   │   │   ├── Footer.tsx
-│   │   │   ├── Header.tsx
-│   │   │   └── Layout.tsx
-│   │   └── ui/
-│   │       ├── accordion.tsx
-│   │       ├── alert.tsx
-│   │       ├──... (over 30 reusable UI components)
-│   ├── hooks/
-│   │   ├── use-mobile.tsx
-│   │   └── use-toast.ts
-│   ├── lib/
-│   │   └── utils.ts
-│   ├── pages/
-│   │   ├── Appointments.tsx
-│   │   ├── Chat.tsx
-│   │   ├── Emergency.tsx
-│   │   ├── Home.tsx
-│   │   ├── Locations.tsx
-│   │   ├── NotFound.tsx
-│   │   ├── PediatricNutrition.tsx
-│   │   ├── Profile.tsx
-│   │   ├── Symptoms.tsx
-│   │   └── Vaccinations.tsx
-│   ├── App.tsx
-│   ├── main.tsx
-│   ├── index.css
-│   └── vite-env.d.ts
-├── .gitignore
-├── eslint.config.js
-├── postcss.config.js
+│   ├─ assets/              # Images & media
+│   ├─ components/
+│   │   ├─ Layout/          # Header, Footer, Layout
+│   │   └─ ui/              # Reusable UI primitives
+│   ├─ hooks/               # Custom hooks
+│   ├─ pages/               # Page components
+│   ├─ lib/                 # Utilities
+│   ├─ App.tsx
+│   └─ main.tsx
 ├── tailwind.config.ts
-├── tsconfig.json
-├── tsconfig.app.json
-├── tsconfig.node.json
 ├── vite.config.ts
 ├── package.json
-├── package-lock.json
-├── bun.lockb
 └── README.md
 ```
 
-Each component lives inside `src/components/ui` and is built on Radix primitives, allowing you to drop `Button`, `Dialog`, or `Carousel` wherever needed. The `Layout` components provide a consistent skeleton across every route. Hook files live in `src/hooks`, providing reusable logic and state across the app.
+- **`/components/ui`** – A small but complete component library (Accordion, Tooltip, Button, etc.).
+- **`/components/Layout`** – Consistent navigation header, footer, and responsive layout.
+- **`/pages`** – Single‑page navigation using React Router, covering all hospital services.
 
----  
+---
 
-## 🤝 Contributing  
+## Contributing 🤝
 
-We welcome contributions from developers, designers, and patients!  
+We welcome contributions! Please follow these steps:
 
-### Code of Conduct  
-Please refer to our [CODE OF CONDUCT](CODE_OF_CONDUCT.md).  
+1. **Fork** the repository.
+2. **Create a feature branch** (`git checkout -b feature/awesome-feature`).
+3. **Run** `npm install` and start the dev server with `npm run dev`.
+4. **Test** your changes locally.
+5. **Push** your branch and open a **Pull Request**.
+6. Ensure your PR includes:
+   - A clear title and description.
+   - Relevant screenshots or GIFs.
+   - Updated documentation if necessary.
 
-### Setup for Dev  
+### Code of Conduct
 
-```bash
-git clone https://github.com/your-org/health-portal.git
-cd health-portal
-pnpm i
-pnpm dev
-```
+All contributors must adhere to our [Code of Conduct](CODE_OF_CONDUCT.md). This ensures a welcoming community for everyone.
 
-### Contributing Checklist  
+---
 
-- [ ] Your code follows TypeScript linting rules.  
-- [ ] Tests pass (`pnpm test`).  
-- [ ] JSDoc comments added for public APIs.  
-- [ ] Pull request description includes issue link and motivation.  
+## Roadmap & Changelog 📅
 
-> **Pull Requests**: Name the branch `feat/<short-desc>` or `fix/<short-desc>` and submit via the GitHub flow.  
+| Version | Date | Highlights |
+|---------|------|------------|
+| **1.0.0** | 2025-01-10 | Initial release with core UI, routing, and demo data. |
+| **1.1.0** | TBD | Planned: Authentication, backend API integration, real‑time chat. |
+| **2.0.0** | TBD | Planned: Mobile app (React Native), accessibility audit, performance overhaul. |
 
----  
+> **Changelog** is maintained at [CHANGELOG.md](CHANGELOG.md).
 
-## 📅 Roadmap & Changelog  
+---
 
-### Upcoming Features  
+## Support & Community 💬
 
-| Sprint | Target Release | Highlights |
-|--------|----------------|------------|
-| 1 | v1.1.0 | **Live Chat** integration + appointment calendar improvements. |
-| 2 | v1.2.0 | **Patient Portal** – view medical history & lab results. |
-| 3 | v1.3.0 | **Analytics Dashboard** – pediatric health metrics visualized. |
+- **Discord** – Join our community: https://discord.gg/example
+- **GitHub Discussions** – Ask questions, share ideas: https://github.com/your-username/manipal-hospital-portal/discussions
+- **Issue Tracker** – File bugs or feature requests: https://github.com/your-username/manipal-hospital-portal/issues
 
-### Changelog  
+**FAQ**
 
-#### v1.0.0 – 2025‑07‑14  
-- Initial public release with core pages, UI components, and basic state management.  
-- Added project structure and documentation.
+| Question | Answer |
+|----------|--------|
+| *How do I deploy this app?* | Run `npm run build` and serve `dist/` with any static host. |
+| *Can I customize the theme?* | Yes – edit `tailwind.config.ts` or add CSS variables. |
+| *Where do I find component docs?* | Each UI component files are self‑documented; check the docs folder. |
 
----  
+---
 
-## 💬 Support & Community  
+## Credits & Acknowledgments 🙌
 
-- **Documentation**: Visit the [Docs Site](https://docs.health-portal.com).  
-- **Discord**: Join the 🎉 **Health Portal Community** – <https://discord.gg/healthportal>.  
-- **Slack**: In‑house team channel – `#health-portal`.  
+| Contributor | Role |
+|------------|------|
+| **Alex Kim** | Lead Front‑end Developer |
+| **Mia Chen** | UI/UX Designer |
+| **Carlos García** | Project Manager |
+| **Open Source Libraries** | Radix UI, Tailwind CSS, Vite, ESBuild |
 
-### FAQ  
+**Inspiration** – The modern, minimal design follows principles from Google's Material Design and Atlassian's Atlaskit.
 
-> **Q**: Can I run this locally without the backend?  
-> **A**: Yes, the UI is fully functional against mock APIs via `msw`.  
+---
 
-> **Q**: How do I add a new page?  
-> **A**: Add a component in `src/pages`, update the routing in `src/main.tsx`, and export the new route.
+## License & Legal 📜
 
----  
+Licensed under **MIT**. See the [LICENSE](LICENSE) file for details.
 
-## 🙌 Credits & Acknowledgements  
-
-- **Component Library**: [Radix UI](https://www.radix-ui.com) for accessible primitives.  
-- **Iconography**: [Heroicons](https://heroicons.com) & custom SVG assets.  
-- **Design Inspiration**: Little‑Egg’s <https://little-egg.com> for child‑friendly UI.  
-- **Build Tools**: Vite, PostCSS, Tailwind, and ES lint – the modern web stack.  
-- **Thank You**: to the open‑source community and our super‑nurses who tested the app under real‑world conditions.
-
----  
-
-## 📜 License & Legal  
-
-![License](https://img.shields.io/github/license/your-org/health-portal?style=flat-square&logo=github)
-
-> © 2025 Pivotal Pediatric, Inc. All rights reserved.  
-> This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
----  
-
-*We are grateful for your interest. Feel free to fork, star, and contribute. Let’s build a healthier tomorrow together!*
+> © 2025 Manipal Hospital Web Portal. All rights reserved.
