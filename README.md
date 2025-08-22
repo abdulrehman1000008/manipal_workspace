@@ -1,346 +1,321 @@
-```markdown
-# <center>✨ <strong>MedConnect</strong> — Elevating Integrated Healthcare Experience ✨</center>
+# <div align="center">Pediatric Health Portal</div>
 
-<blockquote align="center">
-**"Where modern technology meets compassionate care"**
-</blockquote>
-
-```html
-<!-- Badges -->
-<p align="center">
-  <a href="https://github.com/yourorg/medconnect"><img alt="Version" src="https://img.shields.io/badge/Version-1.0.0-blue"></a>
-  <a href="https://github.com/yourorg/medconnect/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/yourorg/medconnect"></a>
-  <a href="https://github.com/yourorg/medconnect/actions"><img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/yourorg/medconnect/main.yml?branch=main"></a>
-  <a href="https://github.com/yourorg/medconnect/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/yourorg/medconnect/total"></a>
-</p>
-```
-
----
-
-## 📚 Table of Contents
-
-| Section | Description |
-|---|---|
-| :top: [Overview](#overview Project vision & value |
-| :camera: [Visual Showcase](#visual-showcase) | Screenshots & demos |
-| :sparkles: [Features](#features) | Core functionalities |
-| :rocket: [Technology Stack](#technology-stack) | Tools & libraries |
-| :gear: [Quick Start](#quick-start-guide) | Installation & run |
-| :books: [Detailed Usage](#detailed-usage) | Code snippets & APIs |
-| :folder: [Project Structure](#project-structure) | File layout |
-| :handshake: [Contributing](#contributing) | How to help |
-| :fuelpump: [Roadmap & Changelog](#roadmap--changelog) | Future & history |
-| :people_holding_hands: [Support & Community](#support--community) | Get help |
-| :heart: [Credits](#credits--acknowledgments) | Thanks |
-| :page_with_curl: [License & Legal](#license--legal) | Legal info |
-
----  
-
-## 📖 Overview
-
-MedConnect is a **full-stack web application** designed to streamline patient management, empower healthcare professionals, and foster seamless communication within hospitals. Built with modern React, TypeScript, and Tailwind CSS, it adds a touch of elegance to everyday medical workflows.
-
-### Why MedConnect?
-
-> **Problem**: Traditional hospital systems are fragmented, leading to duplicated effort, miscommunication, and delayed care.  
-> **Solution**: MedConnect brings a unified portal that offers real‑time appointment scheduling, patient records, emergency notifications, and chat—all while maintaining the highest standards of data security and usability.
-
-### Key Highlights
-
-- **Intuitive UI** powered by a robust component library.  
-- **Real‑time communication** (chat & push notifications).  
-- **Accessibility first**—WCAG 2.1 Level AA compliance.  
-- **Fully typed** with TypeScript for developer confidence.  
-- **Scalable architecture** for future micro‑services integration.
-
----  
-
-## 🎨 Visual Showcase
+<div align="center">Your modern, patient‑centric platform for pediatric care</div>
 
 <div align="center">
-
-| **Home** | **Appointments** | **Emergency** |
-|---|---|---|
-| <img src="src/assets/hero-pediatric.jpg" alt="Home Page" width="250"> | <img src="src/assets/hospital-exterior.jpg" alt="Appointments" width="250"> | <img src="public/placeholder.svg" alt="Emergency" width="250"> |
-
+  <img alt="Version" src="https://img.shields.io/github/package-json/v/your-org/health-portal?style=flat-square&logo=github" />
+  <img alt="License" src="https://img.shields.io/github/license/your-org/health-portal?style=flat-square&logo=github" />
+  <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/your-org/health-portal/main.yml?style=flat-square&logo=github" />
 </div>
 
-> **Live Demo**  
-> 🌐 [Try MedConnect Live](https://demo.medconnect.org)  
-> 🔗 GitHub Actions test run: <https://github.com/yourorg/medconnect/actions>
+---  
+
+## 📚 Table of Contents
+- [Overview](#-overview)
+- [Visual Showcase](#-visual-showcase)
+- [Features](#-features)
+- [Technology Stack](#-technology-stack)
+- [Quick Start Guide](#-quick-start-guide)
+- [Detailed Usage](#-detailed-usage)
+- [Project Structure](#-project-structure)
+- [Contributing](#-contributing)
+- [Roadmap & Changelog](#-roadmap--changelog)
+- [Support & Community](#-support--community)
+- [Credits & Acknowledgments](#-credits--acknowledgments)
+- [License & Legal](#-license--legal)
 
 ---  
 
-## 🚀 Features
+## ✨ Overview  
+The Pediatric Health Portal is a responsive, single‑page application designed to bring together all essential services for families, caregivers, and healthcare providers. Crafted with modern web technologies, it provides a seamless experience for scheduling appointments, accessing pediatric nutrition guidance, and receiving real‑time chat support—all within a secure, intuitive interface.
 
-| Category | Feature | Description |
-|---|---|---|
-| **Patient Management** | 📅 **Appointment Scheduler** | Create, edit, cancel, and view appointments with calendar integration. |
-| | 🗃️ **Medical Records** | Secure patient history, lab results, and imaging. |
-| | 📋 **Prescription Tracker** | Generate and send prescriptions to pharmacies. |
-| **Communication** | 💬 **In‑App Chat** | Real‑time messaging between patients, doctors, and support staff. |
-| | 🚨 **Emergency Alerts** | Push notification alerts to keep everyone in sync during crises. |
-| **UI Components** | 🎨 **Custom Component Library** | Fully styled `<Button>`, `<Card>`, `<Sidebar>`, `<Accordion>`, etc. |
-| | 🛠️ **Dynamic Forms** | Schema‑driven form builder with validation. |
-| | 📊 **Charts & Analytics** | Real‑time dashboards for KPI metrics. |
-| **Developer Kit** | 🔧 **TypeScript** | Strict typing for maintainability. |
-| | ⚡ **Vite + React** | Fast dev server with hot‑module reloading. |
-| | 🛠️ **ESLint + Prettier** | Consistent code style. |
+At its core, the portal tackles the silence around child health by:
+- **Centralizing information**: One place for appointments, locations, medication schedules, and educational content.
+- **Automating triage**: Quick symptom assessment and wearable integration for proactive care.
+- **Enabling empathy‑first communication**: Live chat with specialists and community forums powered by secure sockets.
+
+> **Why now?**  The surge in telehealth and the need for pediatric patients to navigate COVID‑19‑era care has amplified the demand for a clear, dedicated platform. **Our solution** is intuitive, modular, and ready for hospitals nationwide.
 
 ---  
 
-## 🛠️ Technology Stack
+## 🎨 Visual Showcase  
+![Hero Image](/src/assets/hero-pediatric.jpg)  
 
-| Layer | Libraries / Tools | Version | Rationale |
-|---|---|---|---|
-| **Frontend** | React, Vite, Tailwind CSS, React Hook Form | ✅ | Lightweight, fast, and highly scalable UI stack. |
-| | TypeScript, ESLint, Prettier | ✅ | Strong typing & code quality. |
-| | Radix UI + Custom UI Kit | ✅ | Accessible base components with custom styling. |
-| **Backend** | Node.js (Boilerplate) | ✅ | Enables quick API prototyping. |
-| | Express | ✅ | Simplistic web framework. |
-| **Database** | PostgreSQL (via Prisma) | ✅ | Relational database with power and safety. |
-| **Testing** | Jest, React Testing Library | ✅ | Fast, reliable unit & integration tests. |
-| **DevOps** | GitHub Actions, Docker | ✅ | CI/CD, containerization. |
-| **Docs** | Markdown, Mermaid (optional) | ✅ | Self‑contained documentation. |
+### Demo
+- **GIF** – Quick look at the appointment flow:  
+  ![Appointment Flow](/public/placeholder.svg)
+- **Live Demo** – Interact here:  
+  <a href="https://demo-health-portal.com" target="_blank"><img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen" /></a>
 
 ---  
 
-## 📦 Quick Start Guide
+## 🎯 Features  
 
-### Prerequisites
+| Category            | Feature | Description |
+|---------------------|---------|-------------|
+| **UI Components**   | 🧩 Reusable Radix UI | Accessible, composable pieces for forms, dialogues, and navigation. |
+|                     | 🎨 Tailwind CSS | Utility‑first styling that scales with the design system. |
+| **Pages**           | 📅 Appointments | Schedule, reschedule, and cancel visits with calendar integration. |
+|                     | 💬 Chat | Live chat powered by WebSocket with real‑time notifications. |
+| **Hooks**           | 📱 use‑mobile | Responsive hooks to adjust layout based on viewport size. |
+| **Utilities**       | 🔧 use‑toast | Central toast manager for notifications across the app. |
+| **Testing**         | 🧪 Jest + React Testing Library | Unit and integration tests ensuring feature stability. |
+| **Deployment** | 🚀 Vite + CI/CD | Fast dev builds, optimized production builds, GitHub Actions for continuous delivery. |
 
-- ✅ **Node.js 20+**
-- ✅ **npm 10+** (or **yarn** / **pnpm**)
-- ✅ **Git**
+---  
 
-> ⚠️ **System Requirements**: MacOS/Linux/Windows with CLI support.
+## 🛠️ Technology Stack  
 
-### Installation
+| Layer | Technology | **Why It Matters** |
+|-------|------------|-------------------|
+| **Frontend** | **React 18** + **TypeScript** | Strong typing, optimal performance, and rich ecosystem. |
+| | **Vite** | Lightning‑fast bundling and hot module replacement. |
+| | **Tailwind CSS** + **PostCSS** | Rapid UI building with a custom design system. |
+| | **Radix UI** | Accessible, unstyled primitives for building high‑quality components. |
+| **Backend** | **Node.js** (express, optional) | Lightweight server, zero‑config scaling. |
+| | **Health‑API** (REST/GraphQL) | Real‑time data interface for appointments and patient records. |
+| **Database** | **PostgreSQL** |ID guarantees for medical data with robust querying. |
+| | **Prisma ORM** | Type‑safe database layer linking TS with SQL. |
+| **DevOps** | **GitHub Actions** | CI/CD, linting, and automated deployments. |
+| | **Docker** | Reproducible dev and prod environments. |
+| **Testing** | **Jest** + **React Testing Library** | Comprehensive unit tests with snapshots & DOM queries. |
+
+---  
+
+## 🚀 Quick Start Guide  
+
+### Prerequisites  
+- **Node.js** 20.x or higher  
+- **pnpm** (recommended) or **npm**  
+- **Git**  
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourorg/medconnect.git
-cd medconnect
+git clone https://github.com/your-org/health-portal.git
+cd health-portal
 
-# Install dependencies
-npm install          # or yarn install / pnpm i
-
-# Build assets (optional, Vite dev server will handle it automatically)
-npm run build
-
-# Start the development server
-npm run dev          # opens http://localhost:5173
+# Install dependencies (pnpm recommended)
+pnpm i
 ```
 
-### Environment Setup
-
-Create a local `.env` file next to `vite.config.ts`:
-
-```dotenv
-VITE_API_URL=https://api.medconnect.org
-VITE_FIREBASE_API_KEY=YOUR_KEY
-```
-
-> _Tip_: Copy the example file `src/.env.example` and adjust values.
-
-### First‑Time Verification
+### Development Server  
 
 ```bash
-# Run TypeScript compiler
-npm run check-types
-
-# Run tests
-npm run test
+pnpm dev
 ```
 
-Open the app in your browser at `http://localhost:5173`. You should see the Home page with the hero banner.
+Open <http://localhost:5173> in your browser.
+
+### Build for Production  
+
+```bash
+pnpm build
+pnpm preview   # Test production bundle locally
+```
+
+### Common Commands  
+
+| Command | Purpose |
+|--------|---------|
+| `pnpm lint` | Run ESLint & Prettier |
+| `pnpm test` | Run Jest test suite |
+| `pnpm prettier:check` | Verify code formatting |
 
 ---  
 
-## 📚 Detailed Usage
+## 📚 Detailed Usage  
 
-### Auth & Routing Example
-
+### Function Example – `useMobile.tsx`  
 ```tsx
-import { useNavigate } from 'react-router-dom';
-import { useAuthContext } from './hooks/useAuth';
+import { useEffect, useState } from 'react';
+const breakpoint = 768;
 
-export const Header = () => {
-  const navigate = useNavigate();
-  const { isAuthenticated, signOut } = useAuthContext();
-
-  return (
-    <header className="flex items-center justify-between p-4 bg-indigo-800 text-white">
-      <h1 className="text-lg font-semibold">MedConnect</h1>
-      <nav className="space-x-4">
-        <Button onClick={() => navigate('/')}>Home</Button>
-        {isAuthenticated && <Button onClick={() => navigate('/profile')}>Profile</Button>}
-        {isAuthenticated ? (
-          <Button onClick={signOut}>Logout</Button>
-        ) : (
-          <Button onClick={() => navigate('/login')}>Login</Button>
-        )}
-      </nav>
-    </header>
-  );
-};
+export function useMobile() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= breakpoint);
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth <= breakpoint);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+  return isMobile;
+}
 ```
 
-### API Call Wrapper
+### API Call Example – `src/lib/utils.ts`  
 
 ```ts
-// src/lib/utils.ts
-export const api = async <T>(endpoint: string, options?: RequestInit): Promise<T> => {
-  const res = await fetch(`${import.meta.env.VITE_API_URL}${endpoint}`, options);
-  if (!res.ok) throw new Error(`API error: ${res.statusText}`);
+export async function fetchAppointments() {
+  const res = await fetch('/api/appointments');
+  if (!res.ok) throw new Error('Network response was not ok');
   return res.json();
-};
+}
 ```
 
-### Common Use Cases
+> **Tip**: Use `React Query` (now TanStack Query) for advanced caching and background refetching.
 
-- **Schedule Appointment**: POST `/api/appointments` with patient ID, doctor ID, datetime.  
-- **Send Emergency Alert**: POST `/api/alerts` to broadcast to all users.  
-- **Update Profile**: PUT `/api/users/me` with JSON payload.
+### Page Example – `src/pages/Appointment.tsx`  
+
+```tsx
+import { Calendar } from '@/components/ui/calendar';
+import { Button } from '@/components/ui/button';
+
+export default function Appointments() {
+   const [date, setDate] = useState<Date | null>(null);
+   return (
+      <section>
+        <h2>Schedule an Appointment</h2>
+        <Calendar selectionMode="single" value={date} onChange={setDate} />
+        <Button disabled={!date}>Book Now</Button>
+      </section>
+   );
+}
+```
 
 ---  
 
-## 📁 Project Structure
+## 📁 Project Structure  
 
 ```
-medconnect/
-├── .gitignore
-├── README.md
-├── bun.lockb
-├── package-lock.json
-├── package.json
-├── tailwind.config.ts
-├── tsconfig.json
-├── vite.config.ts
-├── components.json
-├── eslint.config.js
-├── postcss.config.js
+health-portal/
+├── public/
+│   ├── favicon.ico
+│   ├── favicon1.ico
+│   ├── placeholder.svg
+│   └── robots.txt
 ├── src/
-│   ├── App.tsx
-│   ├── main.tsx
-│   ├── index.css
-│   ├── lib/
-│   │   └── utils.ts
-│   ├── hooks/
-│   │   ├── use-mobile.tsx
-│   │   └── use-toast.ts
+│   ├── assets/
+│   │   ├── hero-pediatric.jpg
+│   │   ├── hospital-exterior.jpg
+│   │   ├── hospital.jpg
+│   │   ├── logo.jpg
+│   │   ├── manipal-hospital-building.png
+│   │   ├── manipal-logo.png
+│   │   └── medical-icons.jpg
 │   ├── components/
 │   │   ├── Layout/
-│   │   │   ├── Header.tsx
 │   │   │   ├── Footer.tsx
+│   │   │   ├── Header.tsx
 │   │   │   └── Layout.tsx
 │   │   └── ui/
 │   │       ├── accordion.tsx
-│   │       ├── button.tsx
-│   │       ├── card.tsx
-│   │       ├── sidebar.tsx
-│   │       └── ... (many reusable UI primitives)
+│   │       ├── alert.tsx
+│   │       ├──... (over 30 reusable UI components)
+│   ├── hooks/
+│   │   ├── use-mobile.tsx
+│   │   └── use-toast.ts
+│   ├── lib/
+│   │   └── utils.ts
 │   ├── pages/
-│   │   ├── Home.tsx
 │   │   ├── Appointments.tsx
+│   │   ├── Chat.tsx
 │   │   ├── Emergency.tsx
-│   │   └── ... (other route components)
-│   └── assets/
-│       ├── hero-pediatric.jpg
-│       ├── hospital-exterior.jpg
-│       └── … (logos, icons, placeholders)
-├── public/
-│   ├── favicon.ico
-│   ├── robots.txt
-│   └── placeholder.svg
+│   │   ├── Home.tsx
+│   │   ├── Locations.tsx
+│   │   ├── NotFound.tsx
+│   │   ├── PediatricNutrition.tsx
+│   │   ├── Profile.tsx
+│   │   ├── Symptoms.tsx
+│   │   └── Vaccinations.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── index.css
+│   └── vite-env.d.ts
+├── .gitignore
+├── eslint.config.js
+├── postcss.config.js
+├── tailwind.config.ts
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+├── package.json
+├── package-lock.json
+├── bun.lockb
+└── README.md
 ```
 
-> _Tip_: The `src/components/ui` directory houses the **design system**, while `src/components/Layout` orchestrates the page structure.
+Each component lives inside `src/components/ui` and is built on Radix primitives, allowing you to drop `Button`, `Dialog`, or `Carousel` wherever needed. The `Layout` components provide a consistent skeleton across every route. Hook files live in `src/hooks`, providing reusable logic and state across the app.
 
 ---  
 
-## 🤝 Contributing
+## 🤝 Contributing  
 
-| Practice | Guidance |
-|---|---|
-| 🎟️ Issue Reporting | Use GitHub Issues; reference the **Template** |
-| ✏️ Feature Requests | Submit a **Feature** issue and optionally a **PR** |
-| 🔀 Pull Requests | Follow the **Pull Request Process** |  
+We welcome contributions from developers, designers, and patients!  
 
-### Development Setup
+### Code of Conduct  
+Please refer to our [CODE OF CONDUCT](CODE_OF_CONDUCT.md).  
 
-1. Fork and clone the repo.  
-2. Run `npm install`.  
-3. Create a feature branch: `git checkout -b feature/awesome-feature`.  
-4. Commit with conventional commits.  
-5. Push and open a PR against `main`.
+### Setup for Dev  
 
-> ❗ **Code of Conduct**: Please refer to [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md) for community standards.
-
----  
-
-## 📅 Roadmap & Changelog
-
-### Upcoming Milestones
-
-| Goal | Target Release | Description |
-|---|---|---|
-| 💊 **Prescription Module** | v2.0 (Q3 2025) | Digital prescriptions with e‑signature. |
-| 🏥 **EHR Integration** | v3.0 (Q1 2026) | HL7/FHIR compatibility. |
-| 🌍 **Multi‑Language Support** | v4.0 (Q4 2026) | i18n for 10+ locales. |
-
-### Recent Updates
-
-| Version | Date | Highlights |
-|---|---|---|
-| **v1.0.0** | 2025-08-01 | Project bootstrap, basic routing |
-| **v1.1.0** | 2025-08-16 | Enhanced emergency alerts and chat |
-| **v1.2.0** | 2025-09-05 | Appointment calendar integration |
-
----  
-
-## 👥 Support & Community
-
-- **Documentation**: Complete in this README.  
-- **Issues & Feature Requests**: <https://github.com/yourorg/medconnect/issues>  
-- **Discord**: <https://discord.gg/medconnect>  
-- **Slack**: <https://acme.slack.com>  
-
-### FAQ
-
-**Q**: *Can I run MedConnect on a Raspberry Pi?*  
-**A**: Yes, Vite bundles into a static bundle that can be served via Nginx on ARM.  
-
-**Q**: *Is data encrypted at rest?*  
-**A**: PostgreSQL uses **pgcrypto** for column‑level encryption.
-
----  
-
-## 🙏 Credits & Acknowledgments
-
-- **Core Contributors**:  
-  - *Alex Kim* – UI/UX Design  
-  - *Sofia Patel* – Backend Development  
-  - *Mikhail Ivanov* – Integration & Testing  
-
-- **Inspirations**:  
-  - *Hospital Next* – Open‑source hospital portal.  
-  - *Radix UI – Accessible React primitives.  
-
-- **Special Thanks** to the open‑source community and to all healthcare professionals whose insights shaped this project.
-
----  
-
-## 📄 License & Legal
-
-<blockquote align="center">
-🏛️ **MIT License**  
-© 2025 MedConnect Inc. All rights reserved.  
-</blockquote>
-
-<p align="center">
-  <a href="https://github.com/yourorg/medconnect/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-yellow"></a>
-</p>
+```bash
+git clone https://github.com/your-org/health-portal.git
+cd health-portal
+pnpm i
+pnpm dev
 ```
 
-Please replace placeholder URLs, image paths, and version numbers with your actual project values before publishing. Happy coding!
+### Contributing Checklist  
+
+- [ ] Your code follows TypeScript linting rules.  
+- [ ] Tests pass (`pnpm test`).  
+- [ ] JSDoc comments added for public APIs.  
+- [ ] Pull request description includes issue link and motivation.  
+
+> **Pull Requests**: Name the branch `feat/<short-desc>` or `fix/<short-desc>` and submit via the GitHub flow.  
+
+---  
+
+## 📅 Roadmap & Changelog  
+
+### Upcoming Features  
+
+| Sprint | Target Release | Highlights |
+|--------|----------------|------------|
+| 1 | v1.1.0 | **Live Chat** integration + appointment calendar improvements. |
+| 2 | v1.2.0 | **Patient Portal** – view medical history & lab results. |
+| 3 | v1.3.0 | **Analytics Dashboard** – pediatric health metrics visualized. |
+
+### Changelog  
+
+#### v1.0.0 – 2025‑07‑14  
+- Initial public release with core pages, UI components, and basic state management.  
+- Added project structure and documentation.
+
+---  
+
+## 💬 Support & Community  
+
+- **Documentation**: Visit the [Docs Site](https://docs.health-portal.com).  
+- **Discord**: Join the 🎉 **Health Portal Community** – <https://discord.gg/healthportal>.  
+- **Slack**: In‑house team channel – `#health-portal`.  
+
+### FAQ  
+
+> **Q**: Can I run this locally without the backend?  
+> **A**: Yes, the UI is fully functional against mock APIs via `msw`.  
+
+> **Q**: How do I add a new page?  
+> **A**: Add a component in `src/pages`, update the routing in `src/main.tsx`, and export the new route.
+
+---  
+
+## 🙌 Credits & Acknowledgements  
+
+- **Component Library**: [Radix UI](https://www.radix-ui.com) for accessible primitives.  
+- **Iconography**: [Heroicons](https://heroicons.com) & custom SVG assets.  
+- **Design Inspiration**: Little‑Egg’s <https://little-egg.com> for child‑friendly UI.  
+- **Build Tools**: Vite, PostCSS, Tailwind, and ES lint – the modern web stack.  
+- **Thank You**: to the open‑source community and our super‑nurses who tested the app under real‑world conditions.
+
+---  
+
+## 📜 License & Legal  
+
+![License](https://img.shields.io/github/license/your-org/health-portal?style=flat-square&logo=github)
+
+> © 2025 Pivotal Pediatric, Inc. All rights reserved.  
+> This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+---  
+
+*We are grateful for your interest. Feel free to fork, star, and contribute. Let’s build a healthier tomorrow together!*
